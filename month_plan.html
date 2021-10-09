@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Month Plan</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<style>
+    .container{
+        width:90%;
+        padding-top:15px;
+    }
+    nav{
+        box-shadow:unset;
+    }
+    nav a{
+        color: #4e342e !important;
+    }
+    nav .brand-logo {
+        padding-left: 15px;
+    }
+
+    .card{
+        width:200px;
+        display: inline-block;
+        margin: 10px;
+        vertical-align: top;
+    }
+    
+
+    .card .card-action{
+        padding: 5px;
+        text-align: center;
+        font-size: 16px;
+    }
+    .card .card-content {
+        padding: 10px;
+    }
+    .card .card-content p{
+        width:100%;
+    }
+    .big-card{
+        width:300px !important;
+    }
+    .big-card .row{
+        margin:0px !important;
+    }
+
+    tr{
+        border:unset;
+    }
+    td{
+        padding:5px;
+    }
+    .amt{
+        color:#b71c1c;
+        font-weight: 600;
+    }
+    .summary{
+        padding: 15px;
+        border-top: rgba(0,0,0,0.14) 1px solid;
+    }
+    .collapsible-header{
+        padding:10px;
+    }
+    .collapsible-body{
+        padding:15px;
+    }
+
+
+</style>
+<body>
+    <nav>
+        <div class="nav-wrapper brown lighten-5">
+            <a href="" class="brand-logo"><i class="material-icons">filter_drama</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="month_plan.html">월계획</a></li>
+            <li><a href="month_check.html">월증감</a></li>
+            <li><a href="">자산현황</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="card pink lighten-5">
+            <div class="card-action">
+                <a href="#" class="pink-text text-darken-4">고정지출</a>
+            </div>
+            <div class="card-content">
+                <table>
+                    <colgroup>
+                        <col style="width: 60%">
+                        <col>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td class="truncate">보험(하나)</td>
+                            <td>70000</td>
+                        </tr>
+                        <tr>
+                            <td class="truncate">폰비</td>
+                            <td>15000</td>
+                        </tr>
+                        <tr>
+                            <td class="truncate">생수</td>
+                            <td>20000</td>
+                        </tr>
+                        <tr>
+                            <td class="truncate">교통비</td>
+                            <td>35000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="summary">
+                <span><i class="material-icons">add</i></span>
+                <span class="right amt">153000</span>
+            </div>
+        </div>
+
+        <div class="card green lighten-5">
+            <div class="card-action">
+                <a href="#" class="green-text text-darken-4">적금</a>
+            </div>
+            <div class="card-content">
+                <table>
+                    <colgroup>
+                        <col style="width: 60%">
+                        <col>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td class="truncate">주택청약</td>
+                            <td>10000</td>
+                        </tr>
+                        <tr>
+                            <td class="truncate">여행</td>
+                            <td>15000</td>
+                        </tr>
+                        <tr>
+                            <td class="truncate">생수</td>
+                            <td>20000</td>
+                        </tr>
+                        <tr>
+                            <td class="truncate">교통비</td>
+                            <td>35000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="summary">
+                <span><i class="material-icons">add</i></span>
+                <span class="right amt">153000</span>
+            </div>
+        </div>
+
+        <div class="big-card card grey lighten-5" style="width:300px;">
+            <div class="card-action">
+                <a href="#" class="grey-text text-darken-4">변동사항</a>
+            </div>
+            <div class="card-content">
+                <ul class="collapsible expandable">
+                    <li>
+                        <div class="collapsible-header row">
+                            <span class="col s5">20.02.01 ~ 20.03.01</span><span class="col s7 truncate">주택하나카드</span>
+                        </div>
+                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header row">
+                            <span class="col s5">20.02.01 ~ 20.03.01</span><span class="col s7 truncate">주택하나카드</span>
+                        </div>
+                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header row">
+                            <span class="col s5">20.02.01 ~ 20.03.01</span><span class="col s7 truncate">주택하나카드</span>
+                        </div>
+                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+    var elem = document.querySelector('.collapsible.expandable');
+    var instances = M.Collapsible.init(elem);
+  });
+
+    
+    
+</script>
