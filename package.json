@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/cyes7126/211009_accountBook_nodejs/issues"
   },
-  "homepage": "https://github.com/cyes7126/211009_accountBook_nodejs#readme"
+  "homepage": "https://github.com/cyes7126/211009_accountBook_nodejs#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongodb": "^4.1.3"
+  }
 }
